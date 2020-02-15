@@ -133,14 +133,14 @@ def plot(li):
     plt.subplot(7, 1, 7)
     plt.ylabel("A-M-I")
     plt.plot(AMI(li), color='blue', drawstyle='steps-pre', marker='>')
+    plt.subplots_adjust(hspace=0.55)
     plt.show()
 
 
 if __name__ == '__main__':
-    print("Enter the size of Encoded Data : ")
-    size = int(input())
     li = []
-    print('Enter the binary bits sequnce of length ', size, ' bits : \n')
-    for i in range(size):
-        li.append(int(input()))
+    bits = input('Enter the binary bits sequence: ')
+    for i in bits:
+        li.append(int(i))
+
     plot(li)
