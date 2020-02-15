@@ -129,4 +129,4 @@ def plot(bits):
 
 
 if __name__ == '__main__':
-    plot(input("Enter Bits to Convert: ").strip())
+    plot(input('Enter the binary bits sequence: ').strip())
